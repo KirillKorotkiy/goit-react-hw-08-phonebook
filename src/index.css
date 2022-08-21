@@ -28,7 +28,7 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   /* display: flex;
@@ -98,14 +98,4 @@ ul {
 
 
 
-.background-logo {
-  --border-width: 3px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 440px;
-  height: 440px;
-  border-radius:50%;
-}
 

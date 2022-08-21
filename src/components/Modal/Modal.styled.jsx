@@ -38,6 +38,7 @@ export const Form = styled.form`
   padding: 20px;
 `;
 export const Input = styled.input`
+  padding-left: 10px;
   font-size: 18px;
   width: 300px;
   height: 30px;
@@ -45,9 +46,6 @@ export const Input = styled.input`
   border-radius: 5px;
   border: none;
   outline: 1px solid;
-  ::placeholder {
-    padding-left: 10px;
-  }
 `;
 export const ButtonUpdate = styled.button`
   font-size: 16px;

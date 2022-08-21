@@ -12,6 +12,7 @@ import {
   Icon,
   DeleteButton,
   Buttons,
+  Spiner,
 } from './ContactsList.jsx';
 
 export const ContactsList = ({ onClick }) => {
@@ -29,7 +30,9 @@ export const ContactsList = ({ onClick }) => {
     <>
       <Filter value={filter} onChange={setFilter} />
       {status === 'pending' ? (
-       <ThreeDots color="#00BFFF" height={80} width={80} />
+        <Spiner>
+          <ThreeDots color="#00BFFF" height={80} width={80} />
+        </Spiner>
       ) : (
         <List>
           {filterByName.map(({ name, number, id }) => (
@@ -45,7 +48,7 @@ export const ContactsList = ({ onClick }) => {
                 <UpdateButton
                   type="button"
                   onClick={() => {
-                    onClick(id);
+                    onClick(id, name, number);
                   }}
                 ></UpdateButton>
               </Buttons>

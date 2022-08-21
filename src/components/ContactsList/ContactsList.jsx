@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 import { ReactComponent as Logo } from 'icons/contact-svgrepo-com.svg';
 
-export const Input = styled.input`
-  width: 400px;
-  height: 40px;
-`;
+
+
+
 export const List = styled.ul`
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
   color: #3d6889;
 `;
 
@@ -19,7 +18,7 @@ export const Item = styled.li`
   padding: 5px;
   margin-bottom: 20px;
   text-align: center;
-  flex-basis: 17%;
+  flex-basis: 20%;
   background-color: #ebdcb2;
   border-radius: 20px;
   :not(:last-child) {
@@ -66,3 +65,10 @@ export const Icon = styled(Logo)`
   margin-bottom: 10px;
   padding-top: 10px;
 `;
+
+export const Spiner = styled.div`
+display: flex;
+justify-content: center;
+
+
+`

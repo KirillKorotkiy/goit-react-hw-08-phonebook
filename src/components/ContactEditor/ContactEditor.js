@@ -44,6 +44,7 @@ export const ContactEditor = () => {
       <Title>Add new contact</Title>
       <NewUser width="80" />
       <Form
+        autoComplete="off"
         onSubmit={handleSubmit(data => {
           handleSubmitAdd(data);
         })}

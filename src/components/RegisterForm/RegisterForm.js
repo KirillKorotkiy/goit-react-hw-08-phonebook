@@ -44,6 +44,7 @@ export const RegisterForm = () => {
       <Container>
         <Title>Registrate</Title>
         <form
+          autoComplete="off"
           onSubmit={handleSubmit(data => {
             addNewUser(data);
           })}

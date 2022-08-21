@@ -13,12 +13,11 @@ import { ReactComponent as WelcomeLogo } from 'icons/doormat-svgrepo-com.svg';
         <h1 className="welcome">
           Welcome to <br />
           <p className="phonebook">
-            {' '}
-            the Phonebook{' '}
-            {loggedIn && <span className="name"> {userName}</span>}{' '}
+            the Phonebook
+            {loggedIn && <span className="name"> {userName}</span>}
           </p>
         </h1>
-        {!loggedIn ? <LoginForm /> : <WelcomeLogo width="400" />}
+        {!loggedIn ? <LoginForm /> : <WelcomeLogo width="350" />}
       </div>
     </>
   );

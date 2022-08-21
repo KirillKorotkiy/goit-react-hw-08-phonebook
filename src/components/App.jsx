@@ -17,7 +17,7 @@ export const App = () => {
   const dispatch = useDispatch();
   const token = useSelector(authSelectors.getToken);
   const { data } = useGetCurrentUserQuery(null, {
-    skip: !token,
+    skip: token === null,
   });
 
   useEffect(() => {

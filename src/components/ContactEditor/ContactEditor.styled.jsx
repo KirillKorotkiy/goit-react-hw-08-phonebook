@@ -4,23 +4,21 @@ import {ReactComponent as AddNewUserLogo} from '../../icons/add-user-svgrepo-com
 export const Contaciner = styled.div`
 position: absolute;
   margin-bottom: 20px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   z-index: 5;
   top: -10px;
-  left: -300px;
+  left: -220px;
 `;
 export const Input = styled.input`
-  font-size: 18px;
+  font-size: 14px;
   height: 30px;
   border-radius: 5px;
   width: 100%;
   border: none;
   outline: 1px solid;
+  padding-left: 10px;
   margin-bottom: 10px;
-  ::placeholder {
-    padding-left: 10px;
-  }
 `;
 export const Form = styled.form`
   display: flex;

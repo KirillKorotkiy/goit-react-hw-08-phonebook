@@ -3,6 +3,7 @@ import { useGetContactsQuery } from 'redux/contactsAPI';
 
 export const useFilter = () => {
   const { data = [], status, refetch } = useGetContactsQuery();
+
   const contacts = data;
   const [filter, setFilter] = useState('');
     

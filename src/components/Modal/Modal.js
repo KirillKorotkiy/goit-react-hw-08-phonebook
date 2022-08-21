@@ -13,8 +13,13 @@ import {
 } from './Modal.styled';
 import { useUpdateContactMutation } from 'redux/contactsAPI';
 
-export const ModalView = ({ onClick, id }) => {
-  const { register, handleSubmit, reset } = useForm();
+export const ModalView = ({ onClick, id, name, number }) => {
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues: {
+      name: `${name}`,
+      number: `${number}`,
+    }
+  });
   const [update] = useUpdateContactMutation();
 
   const handleSubmitUpdate = async data => {
